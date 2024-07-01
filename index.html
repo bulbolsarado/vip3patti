@@ -38,16 +38,23 @@
   </head>
   <body>
     <div class="center">
-      <div class="top" onclick="DownSoft()">
+      <div id="androidtopDownload" class="top" onclick="DownSoft()">
         <img src="./img/top-image.png" alt="" />
       </div>
       <div class="vip3patti-down-btns">
-        <div class="downBtn" onclick="DownSoft()">
+        <div id="androidDownload" class="downBtn" onclick="DownSoft()">
           <img src="./img/android-img-btn.png" alt="" />
         </div>
-        <div class="downBtn" onclick="DownSoft()">
+        <div id="iosDownload" class="downBtn" onclick="DownSoft()">
           <img src="./img/ios-image-btn.png" alt="" />
         </div>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="modalMessage"></p>
+          </div>
       </div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -152,7 +159,7 @@
         <img src="./img/Pagcor.png" alt="" />
       </div>
 
-      <div class="footbtn">
+      <div id="androidbottomDownload" class="footbtn">
         <a onclick="DownSoft()" target="_blank"
           ><img src="./img/bottom-img.png" alt=""
         /></a>
